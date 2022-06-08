@@ -1,8 +1,8 @@
 # 代码使用说明  Code instructions
 
-Cpse核心文件位于./CpseCore/中，主文件夹中DemoGame.py是基于Cpse开发的一款示例游戏。
+Cpse核心文件位于./CpseCore/中，主文件夹中DemoGame.py是基于Cpse开发的一款示例游戏。详细介绍以及说明文档请查看CPSE2说明文档.pdf
 
-The CPSE core file is located in ./CpseCore/ , DemoGame.py is a sample game developed based on CPSE.
+The CPSE core file is located in ./CpseCore/ , DemoGame.py is a sample game developed based on CPSE. Please refer to CPSE2说明文档.pdf for detailed introduction and documentation
 
 #### Cpse依赖模块：pynput、pywin32
 #### CPSE dependent modules: pynput, pywin32
@@ -11,6 +11,8 @@ The CPSE core file is located in ./CpseCore/ , DemoGame.py is a sample game deve
 # 介绍
 
 CPSE2是一款基于Python的Windows平台控制台画面渲染引擎，提供了丰富的游戏引擎功能，可以实现在Windows控制台高效率渲染画面以及开发游戏。
+
+Cpse2 is a Python based console image rendering engine for Windows platform. It provides rich game engine functions and can achieve efficient rendering of images and game development on Windows console.
 
 ## 基本类
 
@@ -50,54 +52,6 @@ CpseObject为CPSE2基本类，作为CPSE2画面的基本组成部分。
 | anchorPoint                                                    | Tuple | Object的锚点     |
 | **Code**                                                       |       |                  |
 | obj = Cpse.CpseObject([[0,0,0],[1,0,0],[0,1,0],[1,1,0]],(0,0)) |       |                  |
-
-# 第一个CPSE2程序
-
-让我们来制作我们的第一个CPSE2程序，将一个正方形渲染到控制台中。
-
-下列展示的类方法按住Ctrl点击可跳转至方法介绍。
-
-首先导入我们的CPSE2模块
-
-| **Code**    |
-|-------------|
-| import Cpse |
-
-然后我们实例化一个CpseEngine类，并且实例化一个宽高均为50的CpseFrame。
-
-| **Code**                                                             |
-|----------------------------------------------------------------------|
-| import Cpse cpse = Cpse.CpseEngine() frame = Cpse.CpseFrame((50,50)) |
-
-到这里我们就已经成功的完成了CPSE2的初始化，接下来就是要将我们的正方形作为一个CpseObject添加到我们的CpseFrame中。
-
-CPSE的第0位渲染位即为一个正方形，所以我们直接实例化一个正方形CpseObject即可。
-
-| **Code**                                                                                                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------|
-| import Cpse  cpse = Cpse.CpseEngine()  frame = Cpse.CpseFrame((50,50))  obj = Cpse.CpseObject([[0,0,0], [0,1,0], [1,0,0], [1,1,0]],(0,0)) |
-
-这一句代码中我们实例化了一个四个单位大小第0位渲染位图像的CpseObject，锚点是(0,0)，锚点即为Object在Frame中定位的坐标点，为相对坐标。
-
-到此我们就完成了这个程序的一大半了，接下来我们需要将obj添加到frame中。
-
-| **Code**                                                                                                                                                               |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| import Cpse  cpse = Cpse.CpseEngine()  frame = Cpse.CpseFrame((50,50))  obj = Cpse.CpseObject([[0,0,0], [0,1,0], [1,0,0], [1,1,0]],(0,0)) frame.AddObject(obj,(10,10)) |
-
-这一句代码中我们将obj加入到了frame中，初始位置为(10,10)
-
-接下来只要将frame进行渲染就大功告成了！
-
-| **Code**                                                                                                                                                                                                                                                  |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| import Cpse  cpse = Cpse.CpseEngine()  frame = Cpse.CpseFrame((50,50))  obj = Cpse.CpseObject([[0,0,0], [0,1,0], [1,0,0], [1,1,0]],(0,0)) frame.AddObject(obj,(10,10))  cpse.[StartRenderingAndShowThread](#cpseenginestartrenderingandshowthread)(frame) |
-
-通过最后一句代码启动cpse的渲染线程，将frame渲染并展示出来。
-
-| **效果**                                        |
-|-------------------------------------------------|
-| ![](media/b9a2ff33f0a40891afb1e1d136b1d778.png) |
 
 # 基本方法介绍
 
