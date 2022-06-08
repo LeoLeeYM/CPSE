@@ -83,7 +83,11 @@ CPSE的第0位渲染位即为一个正方形，所以我们直接实例化一个
 
 | **Code**                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| import Cpse  cpse = Cpse.CpseEngine() frame = Cpse.CpseFrame((50,50))  obj = Cpse.CpseObject([[0,0,0], [0,1,0], [1,0,0], [1,1,0]],(0,0)) frame.AddObject(obj,(10,10))  cpse.[StartRenderingAndShowThread](#cpseenginestartrenderingandshowthread)(frame) |
+| import Cpse  cpse = Cpse.CpseEngine() 
+frame = Cpse.CpseFrame((50,50))  
+obj = Cpse.CpseObject([[0,0,0], [0,1,0], [1,0,0], [1,1,0]],(0,0)) 
+frame.AddObject(obj,(10,10))  
+cpse.[StartRenderingAndShowThread](#cpseenginestartrenderingandshowthread)(frame) |
 
 通过最后一句代码启动cpse的渲染线程，将frame渲染并展示出来。
 
