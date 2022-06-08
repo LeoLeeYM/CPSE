@@ -1,16 +1,14 @@
-## 代码使用说明
+# 代码使用说明  Code instructions
 
 Cpse核心文件位于./CpseCore/中，主文件夹中DemoGame.py是基于Cpse开发的一款示例游戏。
 
-# Cpse依赖模块：pynput、pywin32
-
-## Code instructions:
+### Cpse依赖模块：pynput、pywin32
 
 The CPSE core file is located in./CpseCore/,DemoGame.py is a sample game developed based on CPSE.
 
-# CPSE dependent modules: pynput, pywin32
+### CPSE dependent modules: pynput, pywin32
 
-## 介绍
+# 介绍
 
 CPSE2是一款基于Python的Windows平台控制台画面渲染引擎，提供了丰富的游戏引擎功能，可以实现在Windows控制台高效率渲染画面以及开发游戏。
 
