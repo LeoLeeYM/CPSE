@@ -7,6 +7,9 @@ The CPSE core file is located in ./CpseCore/ , DemoGame.py is a sample game deve
 #### Cpse依赖模块：pynput、pywin32
 #### CPSE dependent modules: pynput, pywin32
 
+# 更新计划
+#### 1.用C#重写渲染逻辑，加快运行效率
+#### 2.增加物理引擎
 
 # 介绍
 
