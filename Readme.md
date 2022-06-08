@@ -1,11 +1,11 @@
 ## 代码使用说明
 
-Cpse核心文件位于./CpseCore/中，主文件夹中DemoGame.py是基于Cpse开发的一款示例游戏。
+Cpse核心文件位于./CpseCore/中，主文件夹中DemoGame.py是基于Cpse开发的一款示例游戏。\n
 Cpse依赖模块：pynput、pywin32
 
 ## Code instructions:
 
-The CPSE core file is located in./CpseCore/,DemoGame.py is a sample game developed based on CPSE.
+The CPSE core file is located in./CpseCore/,DemoGame.py is a sample game developed based on CPSE.\n
 CPSE dependent modules: pynput, pywin32
 
 ## 介绍
